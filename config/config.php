@@ -15,20 +15,7 @@
 ---------------------------------------------------------
 */
 
-/**
- * Конфиг модуля "company" - Компании
- */
-
- /**
- * Настройки модуля "Компании"
- */
-
-Config::Set('module.twitt.update_rate', 60*15); 		// порог рейтинга при котором юзер может голосовать за компанию
-Config::Set('module.twitt.siteaccount', 'vaktive'); 
-
-//Config::Set('db.table.company', 			'___db.table.prefix___company');
-
-
-
+Config::Set('module.twitt.update_rate', 60*15); 		// частота обновления
+Config::Set('module.twitt.siteaccount', 'vaktive');     // имя twitter аккаунта
 
 ?>
