@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>
+		<lang name="default">Livestreet Twitt Plugin</lang>
+	</name>
+	<author>
+		<lang name="default">Grebenkin Anton</lang>
+	</author>
+	<homepage>http://vaktive.ru/</homepage>
+	<version>1.0.1</version>
+	<requires>
+		<livestreet>0.4.0</livestreet>
+		<plugins>
+
+		</plugins>
+	</requires>
+	<description>
+		<lang name="default">Use twitter on Livestreet engine.</lang>
+		<lang name="russian">Позволяет использовать статусы твиттера в движке livestreet.</lang>
+	</description>
+	<delegate>
+		<module></module>
+		<action></action>
+		<template></template>
+		<entity></entity>
+	</delegate>
+</plugin>
