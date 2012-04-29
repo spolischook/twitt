@@ -20,7 +20,7 @@ class PluginTwitt_ModuleTwitt extends Module {
 	}
 
 	/**
-	 * Получаем данные статуса по имени аккаунта
+	 * Получаем данные статуса по имени аккаунта в твиттере
 	 * @param $sAccountName string
 	 * @return bool|mixed
 	 */
