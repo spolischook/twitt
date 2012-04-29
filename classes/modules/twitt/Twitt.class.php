@@ -1,16 +1,10 @@
 <?php
-/*-------------------------------------------------------
+/*
+---------------------------------------------------------
 *
-*   LiveStreet Engine Social Networking
-*   Copyright © 2008 Mzhelskiy Maxim
-*
-*--------------------------------------------------------
-*
-*   Official site: www.livestreet.ru
-*   Contact e-mail: rus.engine@gmail.com
-*
-*   GNU General Public License, version 2:
-*   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+*	Module "Twitt"
+*	Author: Grebenkin Anton
+*	Contact e-mail: 4freework@gmail.com
 *
 ---------------------------------------------------------
 */
@@ -18,14 +12,19 @@
 set_include_path(get_include_path().PATH_SEPARATOR.dirname(__FILE__));
 
 /**
- * Модуль для работы с блогами
+ * Модуль для работы с твиттером
  *
  */
 class PluginTwitt_ModuleTwitt extends Module {	
-	public function Init() {				
-		
+	public function Init() {
 	}
-	public function GetTwitterStatus($sAccountName){
+
+	/**
+	 * Получаем данные статуса по имени аккаунта
+	 * @param $sAccountName string
+	 * @return bool|mixed
+	 */
+	protected function GetTwitterStatus($sAccountName){
 		$sTwitterXML = "http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=".$sAccountName."&count=1"; 
 		if ($oXml = @simplexml_load_file($sTwitterXML)) { 
 			$oTwitt = Engine::GetEntity('PluginTwitt_Twitt_Twitt');
@@ -34,7 +33,13 @@ class PluginTwitt_ModuleTwitt extends Module {
 		} 
 		return false;
 	}
-	
+
+	/**
+	 * Получаем данные статуса по имени аккаунта используя кэш
+	 *
+	 * @param $sAccountName string
+	 * @return bool|mixed
+	 */
 	public function GetTwittByName($sAccountName) {
 		//$this->Cache_Clean(Zend_Cache::CLEANING_MODE_MATCHING_TAG,array("twitter_status_{$sAccountName}","twitter_update"));
 		if (false === ($data = $this->Cache_Get("twitter_status_{$sAccountName}"))) {			
