@@ -41,7 +41,6 @@ class PluginTwitt_ModuleTwitt extends Module {
 	 * @return bool|mixed
 	 */
 	public function GetTwittByName($sAccountName) {
-		//$this->Cache_Clean(Zend_Cache::CLEANING_MODE_MATCHING_TAG,array("twitter_status_{$sAccountName}","twitter_update"));
 		if (false === ($data = $this->Cache_Get("twitter_status_{$sAccountName}"))) {			
 			$data = $this->GetTwitterStatus($sAccountName); 
 			$this->Cache_Set($data, "twitter_status_{$sAccountName}", array('twitter_update'), Config::Get('module.twitt.update_rate'));

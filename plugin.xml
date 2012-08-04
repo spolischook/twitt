@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin>
 	<name>
-		<lang name="default">Livestreet Twitt Plugin</lang>
+		<lang name="default">Twitt Plugin</lang>
 	</name>
 	<author>
 		<lang name="default">Grebenkin Anton</lang>
@@ -15,8 +15,8 @@
 		</plugins>
 	</requires>
 	<description>
-		<lang name="default">Use twitter on Livestreet engine.</lang>
-		<lang name="russian">Позволяет использовать статусы твиттера в движке livestreet.</lang>
+		<lang name="default">Display last twitt in block</lang>
+		<lang name="russian">Выводит последний твитт в блоке на главной</lang>
 	</description>
 	<delegate>
 		<module></module>
