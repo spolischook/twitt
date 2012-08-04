@@ -6,10 +6,10 @@
 	<author>
 		<lang name="default">Grebenkin Anton</lang>
 	</author>
-	<homepage>http://vaktive.ru/</homepage>
-	<version>1.0.2</version>
+	<homepage>http://ls.vaktive.ru/</homepage>
+	<version>1.0.3</version>
 	<requires>
-		<livestreet>0.4.0</livestreet>
+		<livestreet>1.0</livestreet>
 		<plugins>
 
 		</plugins>
