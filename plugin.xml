@@ -7,7 +7,7 @@
 		<lang name="default">Grebenkin Anton</lang>
 	</author>
 	<homepage>http://vaktive.ru/</homepage>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<requires>
 		<livestreet>0.4.0</livestreet>
 		<plugins>
