@@ -1,6 +1,6 @@
 <?php
 return array(
-	'block_twitt_header' => 'Twitter news',
+	'block_twitt_url' => 'All messages',
 );
 
 ?>

@@ -12,6 +12,6 @@
 			<a href="http://twitter.com/{$oConfig->get('module.twitt.siteaccount')}" class="twittext">{$oTwitt->getText()}</a>	
 		</div>	
 	<footer>
-			<a href="http://twitter.com/{$oConfig->get('module.twitt.siteaccount')}">{$aLang.plugin.twitt.block_twitt_url}</a>
+			<a href="http://twitter.com/{$oConfig->get('module.twitt.siteaccount')}" class="fl-r">{$aLang.plugin.twitt.block_twitt_url}</a>
 	</footer>
 	</section>
